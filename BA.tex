@@ -1,0 +1,288 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Business Analytics Project},
+  pdfauthor={Raza Rafique},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Business Analytics Project}
+\author{Raza Rafique}
+\date{2024-10-15}
+
+\begin{document}
+\maketitle
+
+\section{\texorpdfstring{\textbf{Instructions}}{Instructions}}\label{instructions}
+
+Welcome to the Business Analytics Project! This project will guide you
+through a series of deliverables, from selecting a relevant topic to
+analyzing data and providing actionable business insights. Below are the
+instructions for each deliverable (D1--D4). Make sure to meet the
+deadlines for each phase and follow the guidelines for a successful
+project outcome.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Deliverable 1 (D1): Topic
+Selection}}{Deliverable 1 (D1): Topic Selection}}\label{deliverable-1-d1-topic-selection}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Marks}: 20
+\end{itemize}
+
+The first step in your business analytics project is to choose a
+relevant and impactful topic. Your topic should reflect a real-world
+business problem where data-driven decision-making can provide value.
+
+\begin{itemize}
+\tightlist
+\item
+  Select a business area of interest (e.g., marketing, finance,
+  operations, supply chain, HR, etc.).
+\item
+  Clearly define the problem you aim to address (e.g., customer churn,
+  inventory management, market segmentation, etc.).
+\item
+  Briefly justify why the topic is important and how predictive
+  analytics can offer insights.
+\end{itemize}
+
+\textbf{Submission Requirements}:
+
+\begin{itemize}
+\tightlist
+\item
+  A 1-page summary of your topic selection, including the problem
+  statement and its significance to the business.
+\item
+  Justification of how data analytics will be used to address the
+  problem.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Deliverable 2 (D2): Data Set
+Selection/Collection}}{Deliverable 2 (D2): Data Set Selection/Collection}}\label{deliverable-2-d2-data-set-selectioncollection}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Marks}: 30
+\end{itemize}
+
+In this phase, you will either collect or select an appropriate dataset
+that aligns with your chosen topic.
+
+\begin{itemize}
+\tightlist
+\item
+  Identify a dataset that is suitable for analyzing your chosen business
+  problem.
+\item
+  The dataset should have sufficient data points and variables to
+  support meaningful analysis. It can be obtained from public sources
+  (e.g., Kaggle, UCI Machine Learning Repository) or collected through
+  surveys, business databases, etc.
+\item
+  Include a brief description of the data (variables, number of
+  observations, source).
+\end{itemize}
+
+\textbf{Submission Requirements}:
+
+\begin{itemize}
+\tightlist
+\item
+  Submit a 1-page document that describes the dataset (source,
+  variables, and why it fits the project).
+\item
+  Attach the dataset in .csv or Excel format.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Deliverable 3 (D3): Data
+Cleaning, Exploratory Data Analysis (EDA), and Predictive
+Analytics}}{Deliverable 3 (D3): Data Cleaning, Exploratory Data Analysis (EDA), and Predictive Analytics}}\label{deliverable-3-d3-data-cleaning-exploratory-data-analysis-eda-and-predictive-analytics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Marks}: 50
+\end{itemize}
+
+In this deliverable, you will clean the dataset, perform EDA, and apply
+predictive analytics tools to generate business insights.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Data Cleaning}: Handle missing values, remove duplicates, and
+  correct inconsistencies.
+\item
+  \textbf{Exploratory Data Analysis (EDA)}: Use statistical summaries
+  and visualizations (e.g., histograms, box plots) to understand data
+  distributions, relationships, and trends.
+\item
+  \textbf{Predictive Analytics}: Apply predictive models (e.g.,
+  regression, classification, clustering) to analyze the data and make
+  predictions relevant to the business problem.
+\item
+  \textbf{Model Training and Evaluation}: Train the model and evaluate
+  its performance using metrics like accuracy, RMSE, etc.
+\end{itemize}
+
+\textbf{Submission Requirements}:
+
+\begin{itemize}
+\tightlist
+\item
+  Submit a PowerPoint presentation (8-10 slides) including:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Data cleaning and EDA results.
+  \item
+    Predictive model approach, findings, and business relevance.
+  \item
+    Model training, evaluation, and any actionable insights.
+  \end{itemize}
+\item
+  Be prepared to present your findings in class.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{Deliverable 4 (D4): Term Paper --
+Business Insights and
+Recommendations}}{Deliverable 4 (D4): Term Paper -- Business Insights and Recommendations}}\label{deliverable-4-d4-term-paper-business-insights-and-recommendations}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Marks}: 100
+\end{itemize}
+
+The final step is to synthesize your project into a formal term paper.
+
+\begin{itemize}
+\tightlist
+\item
+  Provide a detailed report of your analysis, focusing on key business
+  insights from the data and predictive model.
+\item
+  Discuss the business implications of your findings and offer
+  recommendations based on your analysis.
+\item
+  Highlight any limitations of your analysis and areas for further
+  research.
+\end{itemize}
+
+\textbf{Submission Requirements}:
+
+\begin{itemize}
+\tightlist
+\item
+  A 8-10 page term paper in APA format, including:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Introduction: Recap of the problem and project objectives.
+  \item
+    Data and Methods: Dataset description, data cleaning, and predictive
+    analytics methods used.
+  \item
+    Findings: Key insights from the analysis.
+  \item
+    Business Recommendations: Practical solutions or actions for the
+    business based on your findings.
+  \item
+    Conclusion: Summary and potential future directions for research or
+    business practice.
+  \end{itemize}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{\texorpdfstring{\textbf{General
+Guidelines}:}{General Guidelines:}}\label{general-guidelines}
+
+\begin{itemize}
+\tightlist
+\item
+  This is an individual project; ensure that you complete all work
+  independently.
+\item
+  Stay organized and meet deadlines for each deliverable.
+\item
+  Provide clear, concise, and professional documentation for each phase.
+\end{itemize}
+
+Good luck, and I look forward to seeing your analytical insights!
+
+\end{document}
